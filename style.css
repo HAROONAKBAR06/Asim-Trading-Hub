@@ -89,59 +89,66 @@
   }
 
   /* ===== NAV ===== */
-/* Responsive adjustments for mobile screens (768px and smaller) */
-@media screen and (max-width: 768px) {
-  
-  /* 1. Header & Logo Layout */
-  .navbar, header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
+/* ===== DOWNSIZED TEXT ONLY FOR SMALL SCREENS ===== */
+@media (max-width: 768px) {
+
+  /* 1. Logo & Nav Text */
+  .logo {
+    font-size: 18px;
+    gap: 6px;
+  }
+  .logo .mark {
+    width: 7px;
+    height: 7px;
+  }
+  .logo span {
+    font-size: 100%; /* Keeps inline red span proportional */
   }
 
-  /* Make logo text size smaller and prevent overlapping */
-  .logo, .logo-text {
-    font-size: 1.2rem; /* Reduces the size of ASIM TRADING HUB */
-    line-height: 1.2;
-    max-width: 60%;    /* Ensures it doesn't push into the button */
+  /* 2. Eyebrow Text */
+  .eyebrow {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .eyebrow::before {
+    width: 18px;
+    height: 2px;
   }
 
-  .tagline, .logo span {
-    font-size: 0.7rem; /* Reduces 'DRIVEN BY STRENGTH' */
-    display: block;    /* Forces tagline to its own line below the main text */
-    margin-top: 2px;
-  }
-
-  /* Reduce the top header button size */
-  .nav-btn, header .contact-btn {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
-
-  /* 2. Hero Section Typography */
-  .hero-title {
-    font-size: 2rem; /* Reduces 'DRIVE BEYOND LIMITS' size */
+  /* 3. Hero Headings & Paragraphs */
+  .hero h1 {
+    font-size: 32px;
     line-height: 1.1;
+    margin-bottom: 12px;
   }
-
-  .hero-description {
-    font-size: 0.95rem; /* Reduces paragraph text size */
+  .hero p {
+    font-size: 13px;
     line-height: 1.4;
+    max-width: 320px;
+    margin-bottom: 20px;
   }
 
-  /* Stack or scale the main hero action buttons */
-  .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  /* 4. Buttons (Scales down text & padding while keeping horizontal inline flow) */
+  .btn {
+    font-size: 12px;
+    padding: 10px 18px;
+    gap: 6px;
   }
 
-  .hero-buttons a, 
-  .hero-buttons button {
-    width: 100%; /* Makes buttons full-width for clean mobile tapping */
-    text-align: center;
+  /* 5. Hero Stats Text */
+  .hero-stat b {
+    font-size: 20px;
+  }
+  .hero-stat span {
+    font-size: 10px;
+  }
+
+  /* 6. Section Titles Across the Page */
+  .section-title {
+    font-size: 26px;
+  }
+  .section-sub {
+    font-size: 13px;
   }
 }
   header{
