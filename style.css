@@ -89,6 +89,61 @@
   }
 
   /* ===== NAV ===== */
+/* Responsive adjustments for mobile screens (768px and smaller) */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Header & Logo Layout */
+  .navbar, header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  /* Make logo text size smaller and prevent overlapping */
+  .logo, .logo-text {
+    font-size: 1.2rem; /* Reduces the size of ASIM TRADING HUB */
+    line-height: 1.2;
+    max-width: 60%;    /* Ensures it doesn't push into the button */
+  }
+
+  .tagline, .logo span {
+    font-size: 0.7rem; /* Reduces 'DRIVEN BY STRENGTH' */
+    display: block;    /* Forces tagline to its own line below the main text */
+    margin-top: 2px;
+  }
+
+  /* Reduce the top header button size */
+  .nav-btn, header .contact-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* 2. Hero Section Typography */
+  .hero-title {
+    font-size: 2rem; /* Reduces 'DRIVE BEYOND LIMITS' size */
+    line-height: 1.1;
+  }
+
+  .hero-description {
+    font-size: 0.95rem; /* Reduces paragraph text size */
+    line-height: 1.4;
+  }
+
+  /* Stack or scale the main hero action buttons */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons a, 
+  .hero-buttons button {
+    width: 100%; /* Makes buttons full-width for clean mobile tapping */
+    text-align: center;
+  }
+}
   header{
     position:fixed;top:0;left:0;right:0;z-index:1000;
     background:rgba(17,17,17,0.0);
