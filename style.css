@@ -108,10 +108,13 @@
     display:flex;align-items:center;gap:8px;
   }
 @media (max-width:425px){
-  font-family:var(--font-head);
+  
+  .logo{
+    font-family:var(--font-head);
     font-weight:700;font-size:20px;color:var(--white);
     letter-spacing:0.01em;
     display:flex;align-items:center;gap:8px;
+  }
 }
   .logo span{color:var(--red);}
   .logo .mark{
