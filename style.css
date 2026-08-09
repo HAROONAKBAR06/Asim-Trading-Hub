@@ -116,7 +116,7 @@
     display:flex;align-items:center;gap:8px;
   }
 }
-@media (width>360px){
+@media (width<360px){
   .logo{
     font-family:var(--font-head);
     font-weight:700;font-size:14px;color:var(--white);
