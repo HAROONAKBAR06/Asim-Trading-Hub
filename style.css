@@ -89,68 +89,7 @@
   }
 
   /* ===== NAV ===== */
-/* ===== DOWNSIZED TEXT ONLY FOR SMALL SCREENS ===== */
-@media (max-width: 768px) {
 
-  /* 1. Logo & Nav Text */
-  .logo {
-    font-size: 18px;
-    gap: 6px;
-  }
-  .logo .mark {
-    width: 7px;
-    height: 7px;
-  }
-  .logo span {
-    font-size: 100%; /* Keeps inline red span proportional */
-  }
-
-  /* 2. Eyebrow Text */
-  .eyebrow {
-    font-size: 10px;
-    margin-bottom: 8px;
-  }
-  .eyebrow::before {
-    width: 18px;
-    height: 2px;
-  }
-
-  /* 3. Hero Headings & Paragraphs */
-  .hero h1 {
-    font-size: 32px;
-    line-height: 1.1;
-    margin-bottom: 12px;
-  }
-  .hero p {
-    font-size: 13px;
-    line-height: 1.4;
-    max-width: 320px;
-    margin-bottom: 20px;
-  }
-
-  /* 4. Buttons (Scales down text & padding while keeping horizontal inline flow) */
-  .btn {
-    font-size: 12px;
-    padding: 10px 18px;
-    gap: 6px;
-  }
-
-  /* 5. Hero Stats Text */
-  .hero-stat b {
-    font-size: 20px;
-  }
-  .hero-stat span {
-    font-size: 10px;
-  }
-
-  /* 6. Section Titles Across the Page */
-  .section-title {
-    font-size: 26px;
-  }
-  .section-sub {
-    font-size: 13px;
-  }
-}
   header{
     position:fixed;top:0;left:0;right:0;z-index:1000;
     background:rgba(17,17,17,0.0);
