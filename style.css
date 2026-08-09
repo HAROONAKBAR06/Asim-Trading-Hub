@@ -107,7 +107,7 @@
     letter-spacing:0.01em;
     display:flex;align-items:center;gap:8px;
   }
-@media (769px<=width<=925px){
+@media (856px<=width<=925px){
   
   .logo{
     font-family:var(--font-head);
@@ -478,7 +478,7 @@
     .news-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
   }
-  @media (max-width:768px){
+  @media (max-width:856px){
     nav.main-links{
       position:fixed;top:0;right:-100%;width:78%;height:100vh;background:var(--black);
       flex-direction:column;justify-content:center;gap:30px;transition:right .4s var(--ease);
