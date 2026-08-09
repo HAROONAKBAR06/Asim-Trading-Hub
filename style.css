@@ -470,7 +470,7 @@
     .news-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
   }
-  @media (max-width:846px){
+  @media (max-width:918px){
     nav.main-links{
       position:fixed;top:0;right:-100%;width:78%;height:100vh;background:var(--black);
       flex-direction:column;justify-content:center;gap:30px;transition:right .4s var(--ease);
