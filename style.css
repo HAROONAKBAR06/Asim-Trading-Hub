@@ -30,9 +30,7 @@
 }
 
   h1,h2,h3,h4{font-family:var(--font-head);font-weight:800;text-transform:uppercase;letter-spacing:0.01em;line-height:1.05;}
-  @media (m) {
-    
-  } 
+  
   .eyebrow{
     font-family:var(--font-head);
     font-weight:700;
@@ -109,6 +107,12 @@
     letter-spacing:0.01em;
     display:flex;align-items:center;gap:8px;
   }
+@media (max-width:425px){
+  font-family:var(--font-head);
+    font-weight:700;font-size:20px;color:var(--white);
+    letter-spacing:0.01em;
+    display:flex;align-items:center;gap:8px;
+}
   .logo span{color:var(--red);}
   .logo .mark{
     width:10px;height:10px;background:var(--red);
